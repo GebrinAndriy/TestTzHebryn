@@ -1,7 +1,7 @@
 <?php
 
-$token = '';
-$chatId = '';
+$token = '7701289673:AAF_PlwfWafkXZAdWW4qtRvHYq6rrY8kU80';
+$chatId = '607299479';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -57,7 +57,7 @@ if ($errors) {
   ]);
 }
 
-if ($token === '7701289673:AAF_PlwfWafkXZAdWW4qtRvHYq6rrY8kU80' || $chatId === '607299479') {
+if ($token === '' || $chatId === '') {
   respond(500, [
     'ok' => false,
     'error' => 'Server is not configured: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID is missing.'
